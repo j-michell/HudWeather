@@ -12,7 +12,7 @@ html
   scroll-behavior: smooth
 
 body
-  background: linear-gradient(148.09deg, #EBEBEB 17.63%, rgba(186, 186, 186, 0) 105.22%)
+  background: linear-gradient(148.09deg, #EBEBEB 17.63%, rgba(186, 186, 186, 0) 100%)
   background-repeat: no-repeat
 
   font-family: $primary-font
@@ -332,14 +332,14 @@ body
       transform: scale(0.5);
 
     @include media(">=tablet", "<=1024px")
-      left: calc(49px / 2.5)
+      left: calc(49px / 1.3)
       top: 10px
 
-      -webkit-transform: scale(0.8); 
-      -moz-transform: scale(0.8); 
-      -ms-transform: scale(0.8); 
-      -o-transform: scale(0.8); 
-      transform: scale(0.8);
+      -webkit-transform: scale(0.7); 
+      -moz-transform: scale(0.7); 
+      -ms-transform: scale(0.7); 
+      -o-transform: scale(0.7); 
+      transform: scale(0.7);
 
     #humidity-icon
       margin-top: 22px
@@ -348,7 +348,6 @@ body
       @include media(">=tablet", "<=1024px")
         margin-top: 28px
         margin-bottom: 28px
-
 
   .stats-desc
     position: relative;
@@ -368,8 +367,8 @@ body
     @include media(">=tablet", "<=1024px")
       width: calc(66px / 1.3)
       height: calc(116px / 1.3)
-      left: calc(88px / 1.6)
-      top: -100px
+      left: calc(88px / 1.3)
+      top: -95px
       margin-right: calc(34px / 1.3)
 
     #humidity-desc
@@ -379,6 +378,10 @@ body
       @include media(">=phone", "<=760px")
         margin-top: calc(27px / 2)
         margin-bottom: calc(24px / 2)
+
+      @include media(">=tablet", "<=1024px")
+        margin-top: calc(27px / 1.3)
+        margin-bottom: calc(24px / 1.3)
 
   .wind
     position: relative
@@ -393,7 +396,11 @@ body
       width: calc(120px / 2)
       left: calc(188px / 2)
       top: -158px
-   
+
+    @include media(">=tablet", "<=1024px")
+      width: calc(120px / 1.3)
+      left: calc(188px / 1.3)
+      top: -185px
 
     #wind-deg, #wind-speed
       margin: 0
@@ -401,6 +408,9 @@ body
 
       @include media(">=phone", "<=760px")
         margin-right: calc(40px / 2)
+
+      @include media(">=tablet", "<=1024px")
+        margin-right: calc(40px / 1.3)
 
     #wind-deg-symb
       position: absolute
@@ -413,6 +423,9 @@ body
 
       @include media(">=phone", "<=760px")
         left: calc(29px / 2)
+
+      @include media(">=tablet", "<=1024px")
+        left: calc(29px / 1.3)
     
 
     #wind-spd-symb
@@ -431,6 +444,11 @@ body
         font-size: 5.5px
         top: 1.5px
 
+      @include media(">=tablet", "<=1024px")
+        left: calc( 93px / 1.2 )
+        font-size: calc(11px / 1.3)
+        top: 2.5px
+
   .humidity
     position: absolute
     display: flex
@@ -443,6 +461,9 @@ body
       left: calc( 188px / 2 )
       top: calc( 68px / 2)
 
+    @include media(">=tablet", "<=1024px")
+      left: calc( 188px / 1.3)
+      top: calc( 68px / 1.3)
 
     #humidity
       margin-bottom: 24.5px
@@ -460,6 +481,10 @@ body
         font-size: calc(11px / 2)
         margin-top: 8px
 
+      @include media(">=tablet", "<=1024px")
+        font-size: calc(11px / 1.3)
+        margin-top: calc(16px / 1.3)
+
   .pressure
     position: absolute
     display: flex
@@ -471,6 +496,10 @@ body
     @include media(">=phone", "<=760px")
       left: calc( 188px / 2 )
       top: calc( 113px / 2 )
+    
+    @include media(">=tablet", "<=1024px")
+      left: calc( 188px / 1.3)
+      top: calc( 113px / 1.265)
  
     #pressure-symb
       margin-top: 16px
@@ -484,6 +513,10 @@ body
       @include media(">=phone", "<=760px")
         font-size: calc(11px / 2)
         margin-top: 8px
+
+      @include media(">=tablet", "<=1024px")
+        font-size: calc(11px / 1.3)
+        margin-top: calc(16px / 1.3)
 
 .sunr-suns-container
   position: relative
@@ -510,6 +543,12 @@ body
 
     font-size: 7px
 
+  @include media(">=tablet", "<=1024px")
+    width: calc(567px / 1.3)
+    height: calc(54px / 1.3)
+    border-radius: 5px
+
+    font-size: calc(14px / 1.3)
 
   #sunrise-icon
     margin-bottom: 6px
@@ -574,6 +613,16 @@ body
     overflow-x: hidden
     overflow-y: auto
 
+  @include media(">=tablet", "<=1024px")
+    width: calc(451px / 1.3)
+    height: calc(505px / 1.7)
+    left: 50%
+    transform: translateX(-50%)
+    top: 67%
+
+    overflow-x: hidden
+    overflow-y: auto
+
   .main-prop
     position: absolute
     width: 39px
@@ -605,6 +654,17 @@ body
       font-size: 12px
       line-height: 18px
 
+    @include media(">=tablet", "<=1024px")
+      width: calc(39px / 1.3)
+      height: calc(34px / 1.3)
+
+      left: calc(373px / 1.3)
+      top: calc(9px / 1.3)
+      right: calc(39px / 1.3)
+
+      font-size: calc(24px / 1.3)
+      line-height: calc(36px / 1.3)
+
 
   .forecast-block-prop
     position: relative
@@ -623,6 +683,12 @@ body
     @include media(">=phone", "<=760px")
       width: calc(451px / 2)
       height: calc(54px / 2)
+
+      border-radius: 5px
+
+    @include media(">=tablet", "<=1024px")
+      width: calc(451px / 1.3)
+      height: calc(54px / 1.3)
 
       border-radius: 5px
 
@@ -650,6 +716,13 @@ body
         left: calc(27px / 2)
         bottom: calc(18px / 1.3)
 
+      @include media(">=tablet", "<=1024px")
+        font-size: calc(14px / 1.3)
+        width: calc(215px / 1.3)
+        height: calc(18px / 1.3)
+        left: calc(27px / 1.3)
+        bottom: calc(18px / 1.15)
+
     #icon-prop
       position: absolute
       width: 40px
@@ -659,8 +732,6 @@ body
       left: 280px
       top: 5px
 
-
-
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1))
 
       @include media(">=phone", "<=760px")
@@ -668,6 +739,12 @@ body
         height: calc(43px / 2)
         left: calc(280px / 2)
         top: 2.5px
+
+      @include media(">=tablet", "<=1024px")
+        width: calc(40px / 1.3)
+        height: calc(43px / 1.3)
+        left: calc(280px / 1.3)
+        top: calc(5px / 1.3)
 
 .footer
   position: absolute
@@ -691,6 +768,12 @@ body
     margin: 0
     line-height: 0
     font-size: 6px
+
+  @include media(">=tablet", "<=1024px")
+    top: 96%
+    margin: 0
+    line-height: 5px
+    font-size: calc(9px / 1.3)
     
 
 

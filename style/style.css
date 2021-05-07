@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background: linear-gradient(148.09deg, #EBEBEB 17.63%, rgba(186, 186, 186, 0) 105.22%);
+  background: linear-gradient(148.09deg, #EBEBEB 17.63%, rgba(186, 186, 186, 0) 100%);
   background-repeat: no-repeat;
   font-family: "Poppins", sans-serif;
 }
@@ -388,10 +388,10 @@ body .title-container .title {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .stats-container .icon-container {
-    left: calc(49px / 2.5);
+    left: calc(49px / 1.3);
     top: 10px;
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8);
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
   }
 }
 
@@ -430,8 +430,8 @@ body .title-container .title {
   .stats-container .stats-desc {
     width: calc(66px / 1.3);
     height: calc(116px / 1.3);
-    left: calc(88px / 1.6);
-    top: -100px;
+    left: calc(88px / 1.3);
+    top: -95px;
     margin-right: calc(34px / 1.3);
   }
 }
@@ -445,6 +445,13 @@ body .title-container .title {
   .stats-container .stats-desc #humidity-desc {
     margin-top: calc(27px / 2);
     margin-bottom: calc(24px / 2);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .stats-container .stats-desc #humidity-desc {
+    margin-top: calc(27px / 1.3);
+    margin-bottom: calc(24px / 1.3);
   }
 }
 
@@ -469,6 +476,14 @@ body .title-container .title {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .stats-container .wind {
+    width: calc(120px / 1.3);
+    left: calc(188px / 1.3);
+    top: -185px;
+  }
+}
+
 .stats-container .wind #wind-deg, .stats-container .wind #wind-speed {
   margin: 0;
   margin-right: 40px;
@@ -477,6 +492,12 @@ body .title-container .title {
 @media (min-width: 360px) and (max-width: 760px) {
   .stats-container .wind #wind-deg, .stats-container .wind #wind-speed {
     margin-right: calc(40px / 2);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .stats-container .wind #wind-deg, .stats-container .wind #wind-speed {
+    margin-right: calc(40px / 1.3);
   }
 }
 
@@ -492,6 +513,12 @@ body .title-container .title {
 @media (min-width: 360px) and (max-width: 760px) {
   .stats-container .wind #wind-deg-symb {
     left: calc(29px / 2);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .stats-container .wind #wind-deg-symb {
+    left: calc(29px / 1.3);
   }
 }
 
@@ -514,6 +541,14 @@ body .title-container .title {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .stats-container .wind #wind-spd-symb {
+    left: calc( 93px / 1.2);
+    font-size: calc(11px / 1.3);
+    top: 2.5px;
+  }
+}
+
 .stats-container .humidity {
   position: absolute;
   display: -webkit-box;
@@ -530,6 +565,13 @@ body .title-container .title {
   .stats-container .humidity {
     left: calc( 188px / 2);
     top: calc( 68px / 2);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .stats-container .humidity {
+    left: calc( 188px / 1.3);
+    top: calc( 68px / 1.3);
   }
 }
 
@@ -553,6 +595,13 @@ body .title-container .title {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .stats-container .humidity #hum-percentage {
+    font-size: calc(11px / 1.3);
+    margin-top: calc(16px / 1.3);
+  }
+}
+
 .stats-container .pressure {
   position: absolute;
   display: -webkit-box;
@@ -572,6 +621,13 @@ body .title-container .title {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .stats-container .pressure {
+    left: calc( 188px / 1.3);
+    top: calc( 113px / 1.265);
+  }
+}
+
 .stats-container .pressure #pressure-symb {
   margin-top: 16px;
   margin-left: 5px;
@@ -585,6 +641,13 @@ body .title-container .title {
   .stats-container .pressure #pressure-symb {
     font-size: calc(11px / 2);
     margin-top: 8px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .stats-container .pressure #pressure-symb {
+    font-size: calc(11px / 1.3);
+    margin-top: calc(16px / 1.3);
   }
 }
 
@@ -616,6 +679,15 @@ body .title-container .title {
     height: calc(54px / 2);
     border-radius: 5px;
     font-size: 7px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .sunr-suns-container {
+    width: calc(567px / 1.3);
+    height: calc(54px / 1.3);
+    border-radius: 5px;
+    font-size: calc(14px / 1.3);
   }
 }
 
@@ -710,6 +782,19 @@ body .title-container .title {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .daily-forecast {
+    width: calc(451px / 1.3);
+    height: calc(505px / 1.7);
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 67%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+
 .daily-forecast .main-prop {
   position: absolute;
   width: 39px;
@@ -739,6 +824,18 @@ body .title-container .title {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .daily-forecast .main-prop {
+    width: calc(39px / 1.3);
+    height: calc(34px / 1.3);
+    left: calc(373px / 1.3);
+    top: calc(9px / 1.3);
+    right: calc(39px / 1.3);
+    font-size: calc(24px / 1.3);
+    line-height: calc(36px / 1.3);
+  }
+}
+
 .daily-forecast .forecast-block-prop {
   position: relative;
   width: 451px;
@@ -758,6 +855,14 @@ body .title-container .title {
   .daily-forecast .forecast-block-prop {
     width: calc(451px / 2);
     height: calc(54px / 2);
+    border-radius: 5px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .daily-forecast .forecast-block-prop {
+    width: calc(451px / 1.3);
+    height: calc(54px / 1.3);
     border-radius: 5px;
   }
 }
@@ -788,6 +893,16 @@ body .title-container .title {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .daily-forecast .forecast-block-prop .date-prop {
+    font-size: calc(14px / 1.3);
+    width: calc(215px / 1.3);
+    height: calc(18px / 1.3);
+    left: calc(27px / 1.3);
+    bottom: calc(18px / 1.15);
+  }
+}
+
 .daily-forecast .forecast-block-prop #icon-prop {
   position: absolute;
   width: 40px;
@@ -810,6 +925,15 @@ body .title-container .title {
     height: calc(43px / 2);
     left: calc(280px / 2);
     top: 2.5px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .daily-forecast .forecast-block-prop #icon-prop {
+    width: calc(40px / 1.3);
+    height: calc(43px / 1.3);
+    left: calc(280px / 1.3);
+    top: calc(5px / 1.3);
   }
 }
 
@@ -836,6 +960,15 @@ body .title-container .title {
     margin: 0;
     line-height: 0;
     font-size: 6px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer {
+    top: 96%;
+    margin: 0;
+    line-height: 5px;
+    font-size: calc(9px / 1.3);
   }
 }
 /*# sourceMappingURL=style.css.map */
