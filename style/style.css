@@ -33,6 +33,12 @@ body .title-container {
   }
 }
 
+@media (min-width: 1930px) {
+  body .title-container {
+    height: 20vh;
+  }
+}
+
 body .title-container .title {
   position: absolute;
   left: 50%;
@@ -55,6 +61,13 @@ body .title-container .title {
   body .title-container .title {
     font-size: calc(24px / 1.5);
     line-height: calc(36px / 1.5);
+  }
+}
+
+@media (min-width: 1930px) {
+  body .title-container .title {
+    font-size: calc(24px * 2);
+    line-height: calc(36px * 2);
   }
 }
 
@@ -95,6 +108,17 @@ body .title-container .title {
   }
 }
 
+@media (min-width: 1930px) {
+  #type-p {
+    width: calc(148px * 2);
+    height: calc(18px * 2);
+    top: -75px;
+    left: 39%;
+    font-size: calc(10px * 2);
+    line-height: calc(15px * 2);
+  }
+}
+
 .current-weather {
   position: absolute;
   width: 567px;
@@ -129,6 +153,15 @@ body .title-container .title {
     width: calc( 567px / 1.5);
     height: calc( 571px / 1.5);
     left: calc(310px / 1.5);
+  }
+}
+
+@media (min-width: 1930px) {
+  .current-weather {
+    width: calc( 567px * 2);
+    height: calc( 571px * 2);
+    left: calc(310px * 2);
+    top: calc(215px * 2);
   }
 }
 
@@ -172,6 +205,14 @@ body .title-container .title {
     width: calc( 567px / 1.5);
     height: calc( 258px / 1.5);
     border-radius: 10px;
+  }
+}
+
+@media (min-width: 1930px) {
+  .current-weather .current-weather-main {
+    width: calc( 567px * 1.5);
+    height: calc( 258px * 1.5);
+    border-radius: 35px;
   }
 }
 
@@ -227,6 +268,20 @@ body .title-container .title {
   }
 }
 
+@media (min-width: 1930px) {
+  .current-weather .current-weather-main .weather-icon {
+    width: calc( 250px * 1.5);
+    height: calc( 212px * 1.5);
+  }
+  .current-weather .current-weather-main .weather-icon img {
+    top: 70px;
+    left: 100px;
+    position: absolute;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+}
+
 .current-weather .current-weather-main .weather-desc-container {
   position: relative;
   width: 164px;
@@ -261,6 +316,14 @@ body .title-container .title {
   }
 }
 
+@media (min-width: 1930px) {
+  .current-weather .current-weather-main .weather-desc-container {
+    width: calc( 164px * 1.5);
+    height: calc( 104px * 1.5);
+    left: calc( 334px * 1.5);
+  }
+}
+
 .current-weather .current-weather-main #current-weather {
   position: relative;
   margin: 0;
@@ -289,6 +352,12 @@ body .title-container .title {
   }
 }
 
+@media (min-width: 1930px) {
+  .current-weather .current-weather-main #current-weather {
+    font-size: calc(48px * 1.5);
+  }
+}
+
 .current-weather .current-weather-main #description {
   position: relative;
   margin: 0;
@@ -314,6 +383,12 @@ body .title-container .title {
 @media (min-width: 1280px) and (max-width: 1366px) {
   .current-weather .current-weather-main #description {
     font-size: calc(14px / 1.5);
+  }
+}
+
+@media (min-width: 1930px) {
+  .current-weather .current-weather-main #description {
+    font-size: calc(14px * 1.5);
   }
 }
 
@@ -363,6 +438,16 @@ body .title-container .title {
   }
 }
 
+@media (min-width: 1930px) {
+  .temp-container {
+    width: calc(185px * 1.5);
+    height: calc(185px * 1.5);
+    top: calc(37px * 1.5);
+    margin-right: calc(37px * 1.5);
+    border-radius: 35px;
+  }
+}
+
 .temp-container #temp {
   position: relative;
   margin: 0;
@@ -395,6 +480,12 @@ body .title-container .title {
   }
 }
 
+@media (min-width: 1930px) {
+  .temp-container #temp {
+    font-size: calc( 96px * 1.5);
+  }
+}
+
 .temp-container #feels-like {
   position: relative;
   margin: 0;
@@ -422,6 +513,12 @@ body .title-container .title {
 @media (min-width: 1280px) and (max-width: 1366px) {
   .temp-container #feels-like {
     font-size: calc(14px / 1.5);
+  }
+}
+
+@media (min-width: 1930px) {
+  .temp-container #feels-like {
+    font-size: calc(14px * 1.5);
   }
 }
 
@@ -470,6 +567,16 @@ body .title-container .title {
     margin-bottom: calc(37px / 1.5);
     font-size: calc(14px / 1.5);
     border-radius: 10px;
+  }
+}
+
+@media (min-width: 1930px) {
+  .stats-container {
+    width: calc(345px * 1.5);
+    height: calc(185px * 1.5);
+    margin-bottom: calc(37px * 1.5);
+    font-size: calc(14px * 1.5);
+    border-radius: 35px;
   }
 }
 

@@ -27,6 +27,10 @@ body
     @include media(">=1280px", "<=desktop")
       height: 5vh
 
+    @include media(">=1930px")
+      height: 20vh
+
+
     .title
       position: absolute
       left: 50%
@@ -45,6 +49,10 @@ body
       @include media(">=1280px", "<=desktop")
         font-size: calc(24px / 1.5)
         line-height: calc(36px / 1.5)
+
+      @include media(">=1930px")
+        font-size: calc(24px * 2)
+        line-height: calc(36px * 2)
 
 #type-p
   position: absolute
@@ -79,6 +87,14 @@ body
     font-size: calc(10px / 1.5)
     line-height: calc(15px / 1.5)
 
+  @include media(">=1930px")
+    width: calc(148px * 2)
+    height: calc(18px * 2)
+    top: -75px
+    left: 39%
+
+    font-size: calc(10px * 2)
+    line-height: calc(15px * 2)
 
 .current-weather
   position: absolute
@@ -105,6 +121,13 @@ body
     height: calc( 571px / 1.5)
     left: calc(310px / 1.5)
 
+  @include media(">=1930px")
+    width: calc( 567px * 2)
+    height: calc( 571px * 2)
+    left: calc(310px * 2)
+    top: calc(215px * 2)
+
+
   .current-weather-main
     width: 567px
     height: 258px
@@ -129,6 +152,11 @@ body
       width: calc( 567px / 1.5)
       height: calc( 258px / 1.5)
       border-radius: 10px
+
+    @include media(">=1930px")
+      width: calc( 567px * 1.5)
+      height: calc( 258px * 1.5)
+      border-radius: 35px
 
     background: rgba(255, 255, 255, 0.3)
     border: 1px solid #FFFFFF
@@ -189,6 +217,20 @@ body
           -o-transform: scale(0.7)
           transform: scale(0.7)
 
+      @include media(">=1930px")
+        width: calc( 250px * 1.5 )  
+        height: calc( 212px * 1.5 )
+    
+        img
+          top: 70px
+          left: 100px
+          position: absolute
+          -webkit-transform: scale(1.5)
+          -moz-transform: scale(1.5)
+          -ms-transform: scale(1.5)
+          -o-transform: scale(1.5)
+          transform: scale(1.5)
+
     .weather-desc-container
       position: relative
       width: 164px
@@ -212,6 +254,11 @@ body
         width: calc( 164px / 1.5)
         height: calc( 104px / 1.5)
         left: calc( 334px / 1.5)
+
+      @include media(">=1930px")
+        width: calc( 164px * 1.5)
+        height: calc( 104px * 1.5)
+        left: calc( 334px * 1.5)
     
     #current-weather
       position: relative
@@ -232,6 +279,10 @@ body
       @include media(">=1280px", "<=desktop")
         font-size: calc(48px / 1.5)
 
+      @include media(">=1930px")
+        font-size: calc(48px * 1.5)
+
+
     #description
       position: relative
       margin: 0
@@ -251,6 +302,9 @@ body
 
       @include media(">=1280px", "<=desktop")
         font-size: calc(14px / 1.5)
+
+      @include media(">=1930px")
+        font-size: calc(14px * 1.5)
 
 .temp-container
   position: relative
@@ -288,6 +342,12 @@ body
     margin-right: calc(37px / 1.5)
     border-radius: 10px
 
+  @include media(">=1930px")
+    width: calc(185px * 1.5)
+    height: calc(185px * 1.5)
+    top: calc(37px * 1.5)
+    margin-right: calc(37px * 1.5)
+    border-radius: 35px
 
   #temp
     position: relative
@@ -314,6 +374,9 @@ body
     @include media(">=1280px", "<=desktop")
       font-size: calc( 96px / 1.5)
 
+    @include media(">=1930px")
+      font-size: calc( 96px * 1.5)
+
   #feels-like
     position: relative
     margin: 0
@@ -336,6 +399,9 @@ body
     
     @include media(">=1280px", "<=desktop")
       font-size: calc(14px / 1.5)
+
+    @include media(">=1930px")
+      font-size: calc(14px * 1.5)
 
 .stats-container
   position: relative
@@ -381,6 +447,15 @@ body
     font-size: calc(14px / 1.5)
 
     border-radius: 10px
+
+  @include media(">=1930px")
+    width: calc(345px * 1.5)
+    height: calc(185px * 1.5)
+    margin-bottom: calc(37px * 1.5)
+
+    font-size: calc(14px * 1.5)
+
+    border-radius: 35px
 
 
   .icon-container
