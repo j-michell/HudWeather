@@ -1,5 +1,5 @@
 function currentWeather(){
-fetch("https://api.openweathermap.org/data/2.5/weather?id=2646458&appid=a5f760dacb2564a55f8c91770b75eebe&units=metric")
+fetch("https://api.openweathermap.org/data/2.5/weather?lat=57.44&lon=-2.78&appid=a5f760dacb2564a55f8c91770b75eebe&units=metric")
   .then(res => res.json())
   .then(data => {
     console.log(data)
